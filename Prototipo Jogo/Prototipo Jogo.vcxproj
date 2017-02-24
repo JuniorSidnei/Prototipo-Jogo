@@ -127,26 +127,8 @@ D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\incl
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%3b
-D:\Projetos;Visual;Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_calib3d249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_contrib249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_core249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_features2d249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_flann249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_gpu249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_highgui249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_imgproc249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_legacy249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ml249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_nonfree249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_objdetect249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_photo249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_stitching249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_superres249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ts249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_video249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_videostab249d.lib%3b
-D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_calib3d249d.lib;
+D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_contrib249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_core249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_features2d249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_flann249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_gpu249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_highgui249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_imgproc249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_legacy249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ml249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_nonfree249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_objdetect249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_photo249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_stitching249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_superres249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_ts249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_video249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\opencv_videostab249d.lib;D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -358,8 +340,14 @@ D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\
     <ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
     <ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvImage.cpp" />
     <ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="src\Arma.cpp" />
+    <ClCompile Include="src\Bala.cpp" />
+    <ClCompile Include="src\DesenhoBase.cpp" />
+    <ClCompile Include="src\Inimigo.cpp" />
+    <ClCompile Include="src\Jogador.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\Terreno.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d\calib3d.hpp" />
@@ -531,7 +519,13 @@ D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvImage.h" />
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvShortImage.h" />
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="src\Arma.h" />
+    <ClInclude Include="src\Bala.h" />
+    <ClInclude Include="src\DesenhoBase.h" />
+    <ClInclude Include="src\Inimigo.h" />
+    <ClInclude Include="src\Jogador.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\Terreno.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

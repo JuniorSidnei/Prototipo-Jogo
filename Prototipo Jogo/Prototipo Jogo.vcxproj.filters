@@ -28,6 +28,24 @@
     <ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
       <Filter>addons\ofxOpenCv\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Arma.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bala.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DesenhoBase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inimigo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Jogador.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Terreno.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -631,6 +649,24 @@
     </ClInclude>
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\videostab.hpp">
       <Filter>addons\ofxOpenCv\libs\opencv\include\opencv2\videostab</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Arma.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bala.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesenhoBase.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inimigo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jogador.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Terreno.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
