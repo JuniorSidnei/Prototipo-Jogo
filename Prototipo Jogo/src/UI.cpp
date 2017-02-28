@@ -2,8 +2,8 @@
 
 UI::UI(int x, int y, string diretorio, short int largImg, short int altImg):DesenhoBase(x, y, diretorio)
 {
-	m_largImg = largImg;
-	m_altImg = altImg;
+	m_ImgLarg = largImg;
+	m_ImgAlt = altImg;
 }
 
 UI::~UI()
@@ -12,5 +12,5 @@ UI::~UI()
 
 void UI::Desenhar()
 {
-	m_img.draw(m_pos.x, m_pos.y, m_largImg, m_altImg);
+	m_img.draw(m_pos.x, m_pos.y, m_ImgLarg, m_ImgAlt);
 }
