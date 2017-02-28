@@ -11,16 +11,6 @@ Arma::~Arma()
 {
 }
 
-void Arma::SetMoverHorizontal(short int x)
-{
-	m_horizontalMove = x;
-}
-
-void Arma::SetMoverVertical(short int y)
-{
-	m_verticalMove = y;
-}
-
 ofVec2f & Arma::GetPos()
 {
 	return m_pos;

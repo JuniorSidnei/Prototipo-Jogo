@@ -17,10 +17,25 @@ public:
 	DesenhoBase(int x, int y, string diretorio);
 	~DesenhoBase();
 
+	/// <summary>
+	/// Determinar a posição na tela (e vetor tb)
+	/// </summary>
+	/// <param name="x">Informar a posição X</param>
+	/// <param name="y">Informar a posição Y inicial</param>
 	void SetPos(int x, int y);
 	virtual void Desenhar() = 0;
 
+	/// <summary>
+	/// Selecionando outra imagem no arquivo fonte
+	/// </summary>
+	/// <param name="imgPosX">Informar a posição X em pixels no Arquivo</param>
+	/// <param name="imgLarg">Informar a Largura em pixels da seleção da imagem</param>
+	/// <param name="imgAlt">Informar a Altura em pixels da seleção da imagem</param>
 	void SetImgFonte(int imgPosX, int imgLarg, int imgAlt);
+	/// <summary>
+	/// Selecionando outra imagem no arquivo fonte
+	/// </summary>
+	/// <param name="imgPosX">Informar a posição X em pixels no Arquivo</param>
 	void SetImgFonte(int imgPosX);
 };
 
