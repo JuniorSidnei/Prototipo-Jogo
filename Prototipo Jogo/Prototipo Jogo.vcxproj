@@ -348,6 +348,7 @@ D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="src\Terreno.cpp" />
+    <ClCompile Include="src\UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d\calib3d.hpp" />
@@ -526,6 +527,7 @@ D:\Projetos Visual Studio\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\
     <ClInclude Include="src\Jogador.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\Terreno.h" />
+    <ClInclude Include="src\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

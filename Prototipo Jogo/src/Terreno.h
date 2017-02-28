@@ -7,5 +7,6 @@ private:
 public:
 	Terreno(int x, int y, string diretorio);
 	~Terreno();
+	void TrocarArquivo(string diretorio);
 	void Desenhar();
 };

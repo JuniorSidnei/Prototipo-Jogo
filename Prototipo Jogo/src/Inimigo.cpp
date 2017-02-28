@@ -2,8 +2,9 @@
 
 
 
-Inimigo::Inimigo(int x, int y, string diretorio):DesenhoBase(x,y,diretorio)
+Inimigo::Inimigo(int x, int y, string diretorio, short int vida):DesenhoBase(x,y,diretorio)
 {
+	m_vida = vida;
 }
 
 
@@ -13,19 +14,25 @@ Inimigo::~Inimigo()
 
 void Inimigo::Colidir(Jogador* jog)
 {
-	if (m_pos.y <= jog->GetPos().y + ALTURA_IMG_JOGADOR*0.75f && m_pos.y + 15 * ESCALA_DESENHO_INIMIGO*0.75f >= jog->GetPos().y)
-		if (m_pos.x <= jog->GetPos().x + LARGURA_IMG_JOGADOR*0.9f && m_pos.x + 10 * ESCALA_DESENHO_INIMIGO >= jog->GetPos().x + 0.1f * LARGURA_IMG_JOGADOR)
-			exit(0);
+	if(!jog->GetInvul())
+		if (m_pos.y <= jog->GetPos().y + ALTURA_IMG_JOGADOR*0.75f && m_pos.y + 15 * ESCALA_DESENHO_INIMIGO*0.75f >= jog->GetPos().y)
+			if (m_pos.x <= jog->GetPos().x + LARGURA_IMG_JOGADOR*0.9f && m_pos.x + 10 * ESCALA_DESENHO_INIMIGO >= jog->GetPos().x + 0.1f * LARGURA_IMG_JOGADOR)
+			{
+				jog->SetVida(1);
+				jog->SetInvul(true);
+			}
 }
 
 void Inimigo::Colidir(Bala * bala)
 {
-	if (m_pos.y <= bala->GetPos().y + 11 * 0.9f && m_pos.y + 15 * ESCALA_DESENHO_INIMIGO*0.9f >= bala->GetPos().y)
-		if (m_pos.x <= bala->GetPos().x + 39 * 0.9f && m_pos.x + 10 * ESCALA_DESENHO_INIMIGO >= bala->GetPos().x + 0.1f * 39)
-		{
-			m_vivo = false;
-			bala->SetAtirando(false);
-		}
+	switch (bala->GetAtirando())
+		case true:
+			if (m_pos.y <= bala->GetPos().y+ 11 * 0.9f && m_pos.y + 15 * ESCALA_DESENHO_INIMIGO*0.9f >= bala->GetPos().y)
+				if (m_pos.x <= bala->GetPos().x + 39 * 0.9f && m_pos.x + 10 * ESCALA_DESENHO_INIMIGO >= bala->GetPos().x + 0.1f * 39)
+				{
+					SetVida(1);
+					bala->SetAtirando(false);
+				}
 }
 
 void Inimigo::Mover()
@@ -42,6 +49,8 @@ void Inimigo::Mover()
 		m_posVertAnterior = m_pos.y;
 		m_pos.y += rand() % 7 - 3; //varia de -3 a 3
 	}
+	else
+		m_pos.y = m_posVertAnterior;
 }
 
 void Inimigo::Desenhar()
@@ -57,4 +66,16 @@ bool Inimigo::GetVivo()
 void Inimigo::SetVivo(bool vivo)
 {
 	m_vivo = vivo;
+}
+
+int Inimigo::GetVida()
+{
+	return m_vida;
+}
+
+void Inimigo::SetVida(short int perdaVida)
+{
+	m_vida -= perdaVida;
+	if (m_vida <= 0)
+		SetVivo(false);
 }

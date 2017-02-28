@@ -10,21 +10,23 @@ class Inimigo :public DesenhoBase
 private:
 	float m_posHoriAnterior = 0, m_posVertAnterior = 0;
 	bool m_vivo = true;
+	short int m_vida;
 public:
-	Inimigo(int x, int y, string diretorio);
+	Inimigo(int x, int y, string diretorio, short int vida);
 	~Inimigo();
 
 	/// <summary>
 	/// Colisão com os outros objetos
 	/// </summary>
-	/// <param name="pos">Informar as posição do outro objeto</param>
-	/// <param name="number">0->Jogador,   1->Bala</param>
 	void Colidir(Jogador* jog);
-	void Colidir(Bala* bala);
+	virtual void Colidir(Bala* bala);
 	void Mover();
 	void Desenhar();
 	
 	bool GetVivo();
 	void SetVivo(bool vivo);
+
+	int GetVida();
+	void SetVida(short int perdaVida);
 };
 

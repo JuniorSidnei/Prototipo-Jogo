@@ -2,7 +2,7 @@
 
 
 
-Jogador::Jogador(int x, int y, string diretorio):DesenhoBase(x, y, diretorio)
+Jogador::Jogador(int x, int y, string diretorio):DesenhoBase(x,y,diretorio)
 {
 }
 
@@ -42,10 +42,53 @@ void Jogador::Mover(int tempo)
 
 void Jogador::Desenhar()
 {
-	m_img.draw(m_pos.x, m_pos.y, LARGURA_IMG_JOGADOR, ALTURA_IMG_JOGADOR);
+	m_img.drawSubsection(m_pos.x, m_pos.y, LARGURA_IMG_JOGADOR, ALTURA_IMG_JOGADOR, m_invul * 319, 0, 319, 486);
+	//m_img.draw(m_pos.x, m_pos.y, LARGURA_IMG_JOGADOR, ALTURA_IMG_JOGADOR);
 }
 
 ofVec2f & Jogador::GetPos()
 {
 	return m_pos;
+}
+
+void Jogador::SetVida(short int perdaVida)
+{
+	m_vida -= perdaVida;
+	if (m_vida <= 0)
+		m_vivo = false;
+}
+
+short int Jogador::GetVida()
+{
+	return m_vida;
+}
+
+void Jogador::SetVivo(bool vivo)
+{
+	m_vivo = vivo;
+}
+
+bool Jogador::GetVivo()
+{
+	return m_vivo;
+}
+
+void Jogador::SetInvul(bool invul)
+{
+	m_invul = invul;
+}
+
+void Jogador::TimeInvul()
+{
+	m_timeInvul++;
+	if (m_timeInvul * 60 > 2000)
+	{
+		m_invul = false;
+		m_timeInvul = 0;
+	}
+}
+
+bool Jogador::GetInvul()
+{
+	return m_invul;
 }

@@ -8,6 +8,11 @@ Terreno::~Terreno()
 {
 }
 
+void Terreno::TrocarArquivo(string diretorio)
+{
+	m_img.load(diretorio);
+}
+
 void Terreno::Desenhar()
 {
 	m_img.draw(0, 0, 800, 600);
