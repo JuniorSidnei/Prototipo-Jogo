@@ -1,7 +1,7 @@
 #include "Arma.h"
 
 
-
+//
 Arma::Arma(int x, int y, string diretorio):DesenhoBase(x+22,y+31,diretorio)
 {
 }
